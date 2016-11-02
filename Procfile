@@ -1,1 +1,1 @@
-web: play run --http.port=$PORT $PLAY_OPTS
+web: java $JAVA_OPTS --port $PORT target/*.war
