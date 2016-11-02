@@ -3,14 +3,10 @@ buildscript {
         jcenter()
         maven { url 'http://dl.bintray.com/vermeulen-mp/gradle-plugins' }
     }
-    dependencies {
-        classpath "org.gradle.api.plugins:gradle-heroku:0.9.6"
-    }
 }
 
 apply plugin: 'java'
 apply plugin: 'war'
-apply plugin: 'heroku'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
@@ -39,13 +35,21 @@ dependencies {
     )
 }
 
-heroku {
-    //get this from heroku
-    apiKey = '80917665-39a3-423c-bdc4-0acb58aa0383'
 
-    //set this on first run if you don't want a generated name
-    //appName = 'apistackexhtet'
 
-    //set this if you are not happy with the default gradlew buildpack
-    //buildpack = 'http://somebuildpack
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.6'
+}
+
+task stage(type: Copy, dependsOn: [clean, build]) {
+    from jar.archivePath
+    into project.rootDir
+    rename {
+        'app.jar'
+    }
+}
+stage.mustRunAfter(clean)
+
+clean << {
+    project.file('app.jar').delete()
 }
