@@ -1,1 +1,3 @@
-web: ./build/libs/*.war
+$ git add
+$ git commit -m "Procfile"
+$ git push heroku
