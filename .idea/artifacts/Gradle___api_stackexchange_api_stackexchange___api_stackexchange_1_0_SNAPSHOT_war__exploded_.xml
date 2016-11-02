@@ -1,11 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Gradle : api.stackexchange : api.stackexchange.war (exploded)">
-    <output-path>$PROJECT_DIR$/out/artifacts/api.stackexchange/exploded/api.stackexchange.war</output-path>
+  <artifact type="exploded-war" name="Gradle : api.stackexchange:api.stackexchange : api.stackexchange-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/out/artifacts/api.stackexchange/exploded/api.stackexchange-1.0-SNAPSHOT.war</output-path>
     <properties id="gradle-properties">
       <options external-project-path="$PROJECT_DIR$" />
     </properties>
     <root id="root">
-      <element id="javaee-facet-resources" facet="api.stackexchange/web/Web Gradle : api.stackexchange.war" />
+      <element id="javaee-facet-resources" facet="api.stackexchange/web/Web Gradle : api.stackexchange-1.0-SNAPSHOT.war" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="api.stackexchange" />
@@ -29,7 +29,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/api.stackexchange/exploded/api.stackexchange.war/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/api.stackexchange/exploded/api.stackexchange-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
       </element>
     </root>
   </artifact>
