@@ -1,7 +1,6 @@
 buildscript {
     repositories {
         jcenter()
-        maven { url 'http://dl.bintray.com/vermeulen-mp/gradle-plugins' }
     }
 }
 
@@ -20,6 +19,7 @@ dependencies {
             'org.springframework:spring-webmvc:4.1.5.RELEASE',
             'org.slf4j:slf4j-api:1.7.10',
             'javax.servlet:jstl:1.2',
+            'org.codehaus.jackson:jackson-mapper-lgpl:1.9.0'
     )
     providedCompile(
             'javax.servlet:javax.servlet-api:3.1.0',
@@ -35,21 +35,3 @@ dependencies {
     )
 }
 
-
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.6'
-}
-
-task stage(type: Copy, dependsOn: [clean, build]) {
-    from jar.archivePath
-    into project.rootDir
-    rename {
-        'app.jar'
-    }
-}
-stage.mustRunAfter(clean)
-
-clean << {
-    project.file('app.jar').delete()
-}

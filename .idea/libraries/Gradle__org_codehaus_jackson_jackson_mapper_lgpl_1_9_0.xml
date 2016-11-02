@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.codehaus.jackson:jackson-mapper-lgpl:1.9.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-lgpl/1.9.0/a3fd55f51204f47fa78ca165c32cffa11fa61e81/jackson-mapper-lgpl-1.9.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-lgpl/1.9.0/a5e3d97bdf7ea3d630917d6e02883bd38dc31d88/jackson-mapper-lgpl-1.9.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
