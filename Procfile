@@ -1,3 +1,1 @@
-$ git add
-$ git commit -m "Procfile"
-$ git push heroku
+web java $JAVA_OPTS --port $PORT target/*.war 
