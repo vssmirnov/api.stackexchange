@@ -1,1 +1,1 @@
-web: .build/libs/*.war
+web: ./build/libs/*.war
