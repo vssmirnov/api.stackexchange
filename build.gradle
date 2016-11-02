@@ -33,3 +33,7 @@ dependencies {
             'org.springframework:spring-test:4.1.5.RELEASE'
     )
 }
+
+task stage {
+    dependsOn installDist
+}
