@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="webapp.controller.MainControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-11-03T09:42:02" hostname="vssmirnov" time="0.504">
+<testsuite name="webapp.controller.MainControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-11-03T10:48:37" hostname="vssmirnov" time="0.823">
   <properties/>
-  <testcase name="renderMainView_ShouldReturnResponseStatusOk" classname="webapp.controller.MainControllerTest" time="0.489"/>
-  <testcase name="renderMainView_ShouldRenderMainPage" classname="webapp.controller.MainControllerTest" time="0.015"/>
+  <testcase name="renderMainView_ShouldReturnResponseStatusOk" classname="webapp.controller.MainControllerTest" time="0.802"/>
+  <testcase name="renderMainView_ShouldRenderMainPage" classname="webapp.controller.MainControllerTest" time="0.02"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/vssmirnov.DEV/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.10/b3eeae7d1765f988a1f45ea81517191315c69c9e/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/vssmirnov.DEV/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.7/9865cf6994f9ff13fce0bf93f2054ef6c65bb462/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+]]></system-err>
 </testsuite>
