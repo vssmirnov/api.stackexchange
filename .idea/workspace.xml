@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="6b0abc1d-3489-484e-885e-c6cb99145fbe" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___api_stackexchange___api_stackexchange_war.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___api_stackexchange___api_stackexchange_war__exploded_.xml" />
@@ -68,6 +69,9 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_18_1_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_4_1_5_RELEASE.xml" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_4_1_5_RELEASE.xml" />
     </list>
+=======
+    <list default="true" id="6b0abc1d-3489-484e-885e-c6cb99145fbe" name="Default" comment="" />
+>>>>>>> Stashed changes
     <ignored path="api.stackexchange.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -151,7 +155,7 @@
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
               </PATH_ELEMENT>
               <PATH_ELEMENT>
-                <option name="myItemId" value="build" />
+                <option name="myItemId" value="other" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
               </PATH_ELEMENT>
             </PATH>
@@ -171,7 +175,13 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
+<<<<<<< Updated upstream
                 <element signature="imports" expanded="true" />
+=======
+                <element signature="imports" expanded="false" />
+                <element signature="e#352#353#0" expanded="false" />
+                <element signature="e#382#383#0" expanded="false" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -192,7 +202,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -200,6 +212,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state vertical-scroll-proportion="0.7165698">
               <caret line="29" column="14" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="72" />
               <folding>
@@ -214,16 +227,28 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+=======
+            <state vertical-scroll-proportion="0.22306855">
+              <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="ApiUrlBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/stackExchange/ApiUrlBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+=======
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.5280899">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -233,8 +258,34 @@
         <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+<<<<<<< Updated upstream
               <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding />
+=======
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#313#314#0" expanded="false" />
+                <element signature="e#342#343#0" expanded="false" />
+                <element signature="e#387#388#0" expanded="false" />
+                <element signature="e#423#424#0" expanded="false" />
+                <element signature="e#458#459#0" expanded="false" />
+                <element signature="e#485#486#0" expanded="false" />
+                <element signature="e#529#530#0" expanded="false" />
+                <element signature="e#561#562#0" expanded="false" />
+                <element signature="e#596#597#0" expanded="false" />
+                <element signature="e#624#625#0" expanded="false" />
+                <element signature="e#669#670#0" expanded="false" />
+                <element signature="e#703#704#0" expanded="false" />
+                <element signature="e#736#737#0" expanded="false" />
+                <element signature="e#765#766#0" expanded="false" />
+                <element signature="e#809#810#0" expanded="false" />
+                <element signature="e#845#846#0" expanded="false" />
+                <element signature="e#879#880#0" expanded="false" />
+                <element signature="e#909#910#0" expanded="false" />
+                <element signature="e#955#956#0" expanded="false" />
+                <element signature="e#993#994#0" expanded="false" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -245,7 +296,11 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding>
+<<<<<<< Updated upstream
                 <element signature="imports" expanded="true" />
+=======
+                <element signature="imports" expanded="false" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -264,6 +319,19 @@
       <file leaf-file-name="Procfile.win" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile.win">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+=======
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="80" selection-start-line="0" selection-start-column="80" selection-end-line="0" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradlew.bat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradlew.bat">
+          <provider selected="true" editor-type-id="text-editor">
+>>>>>>> Stashed changes
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
               <folding />
@@ -449,7 +517,11 @@
     </option>
     <option name="modificationStamps">
       <map>
+<<<<<<< Updated upstream
         <entry key="$PROJECT_DIR$" value="2956251959071" />
+=======
+        <entry key="$PROJECT_DIR$" value="2956494641498" />
+>>>>>>> Stashed changes
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -464,6 +536,8 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.2.4.Final/b02d7b80cdadbfc51106252238fc1a667c8287eb/hibernate-validator-5.2.4.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.2.4.Final/fb18766b576aa6632bcfe9a20a023cbd52bf9769/hibernate-validator-5.2.4.Final.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.1.5.RELEASE/c5937e72aedcd88f01cdaab36624120db30a4e2c/spring-webmvc-4.1.5.RELEASE-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.1.5.RELEASE/71b10b2ba7f6f0cce690d55e4bc8afc823d16628/spring-webmvc-4.1.5.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.10/4d2725efe68b9943ba0deaf334bb27116ca6b687/slf4j-api-1.7.10-sources.jar" />
@@ -474,6 +548,7 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-lgpl/1.9.0/a5e3d97bdf7ea3d630917d6e02883bd38dc31d88/jackson-mapper-lgpl-1.9.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-lgpl/1.9.0/a3fd55f51204f47fa78ca165c32cffa11fa61e81/jackson-mapper-lgpl-1.9.0.jar" />
+<<<<<<< Updated upstream
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.1.5.RELEASE/bb34cc6820000f0bc83bf0319098a18d6326bb82/spring-web-4.1.5.RELEASE-sources.jar" />
@@ -492,6 +567,76 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.5.RELEASE/4f9af02bca3066ea0d5ac450332ca210c5de1957/spring-core-4.1.5.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+=======
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.3.6.RELEASE/ddde0a61b974d4c337057850762d7b5f896618bd/spring-boot-starter-web-1.3.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.3.6.RELEASE/11ba900b5b21ce547bd902c0021d88c33b9608c2/spring-boot-starter-web-1.3.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.3.6.RELEASE/ee54fee7325151611baa9c23adadf75acbcc5cc3/spring-boot-starter-tomcat-1.3.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.3.6.RELEASE/89ad451d9847c1ae55f32cfb20f2de16e81a80e5/spring-boot-starter-tomcat-1.3.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.7/3f689e85593aeb1e8d75dcc4218245aca279d51b/jackson-core-2.6.7-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.7/81838e08d5e10e33cdee7299f9682d836b78c63e/jackson-core-2.6.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.7.RELEASE/fd502d09e2cdcd99c7e77ca5fcb809520cfacc81/spring-beans-4.2.7.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.7.RELEASE/ae0501728c0ee072e25cb5e11b63b883c0786b4b/spring-beans-4.2.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.7/6cfaf5c02fb50bfdf7ea5e563955d3c229d7e154/logback-classic-1.1.7-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.7/9865cf6994f9ff13fce0bf93f2054ef6c65bb462/logback-classic-1.1.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.21/5f537a1ecb32fe3173a95f3c2c233f35f250faef/jul-to-slf4j-1.7.21-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.21/2f22c882ffa479d1e9ff4eb0e8e2c29f2a0871ed/jul-to-slf4j-1.7.21.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.21/7d7494c4241d0dee8bf0680187282d3dc19844e/log4j-over-slf4j-1.7.21-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.21/b3700d97464d99bdcd42c0177d6e7951c94d75ff/log4j-over-slf4j-1.7.21.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.7.RELEASE/8ac1b78421bdd215d2ae034ee4bb8af1e9746d10/spring-context-4.2.7.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.7.RELEASE/289f2906943827d37de89240dbac8fe4b315a838/spring-context-4.2.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3625e6818158ddb4754fa2ec51299e5f57e596b4/jboss-logging-3.3.0.Final-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.1.0/53b184da3b8780beff23ba6bf1aaece92ee45e6f/classmate-1.1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.1.0/dbbd699a1486ad0f2ed6f5af6cfed66acacb9056/classmate-1.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.7/15a62dbee75aadf62b7d35640533262d764b29d3/logback-core-1.1.7-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.7/7873092d39ef741575ca91378a6a21c388363ac8/logback-core-1.1.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.7.RELEASE/2f10a08b226a960ec9e0f78199302a6e54f93f7/spring-core-4.2.7.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.7.RELEASE/3d08f6f68e0654bf4be50559aec4218334189583/spring-core-4.2.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.7.RELEASE/51702a1c7573d2311562a35368a0f8cacf5b43eb/spring-expression-4.2.7.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.7.RELEASE/547b8e02f5e219f6c8c8f84675d0cd7a8a6e92cf/spring-expression-4.2.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.7.RELEASE/a59731f048b7042add2c0b072b9dcebf83b448cf/spring-web-4.2.7.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.7.RELEASE/ff3ac136a3cc9103eeab648ab32a9001a831038d/spring-web-4.2.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-lgpl/1.9.0/422a990713a2cef45d68a51dc87a3a3f9025fafa/jackson-core-lgpl-1.9.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-lgpl/1.9.0/a2e5d95ac9f439332b5dbac1b5d5a9579456e4d7/jackson-core-lgpl-1.9.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.3.6.RELEASE/63deae55447ee3b2149236d403f0153e0e766ed4/spring-boot-starter-1.3.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.3.6.RELEASE/eb4181e48cbe0edab189b114e63c18593b23b77d/spring-boot-starter-1.3.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/1.3.6.RELEASE/3de196c22304be60a6ae6a5b88fccbc8dc800651/spring-boot-starter-validation-1.3.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/1.3.6.RELEASE/a5bdd9fe7c9f510353ce01db3de4759c719c8d82/spring-boot-starter-validation-1.3.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.7/b03af0d8ea33f3895b894571b6bfa784fb3bdf42/jackson-databind-2.6.7-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.7/1857f49ee9dffe1c8d17d4c3980e0d713af2806/jackson-databind-2.6.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.0.36/bf455c447351c3c18c0e78256c89e2cdf21ebccb/tomcat-embed-core-8.0.36-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.0.36/de87fa65671daad59773c8280eeabbd335f42c/tomcat-embed-core-8.0.36.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.0.36/3fff70611b73b116b8753b8ef9d237a4efff57d1/tomcat-embed-el-8.0.36-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.0.36/afe18071fd9a8bfd63d053fedb18d113619e420e/tomcat-embed-el-8.0.36.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-juli/8.0.36/6fdb1099e69a88e602665bcd92102c2231f0689e/tomcat-embed-logging-juli-8.0.36-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-juli/8.0.36/dd90324b18cddda9e4dc3690f0e4fbe902d180f7/tomcat-embed-logging-juli-8.0.36.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.0.36/7dbc08b7ae440c987a830bc3bd0b8c5385d70cef/tomcat-embed-websocket-8.0.36-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.0.36/f93339e9870f4797e28c23760c03d184dea3bab5/tomcat-embed-websocket-8.0.36.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.7.RELEASE/b1ed405a237850f69a7ba9860f45a6ec42518477/spring-aop-4.2.7.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.7.RELEASE/bd65f97ba61fd3dcc0b74765d3fa388aeb388aa7/spring-aop-4.2.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.3.6.RELEASE/dab045dcb67da7f14e798d36be21515c36b85887/spring-boot-1.3.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.3.6.RELEASE/535e6024988998f891f1f9df403e804c093df06b/spring-boot-1.3.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.3.6.RELEASE/3c38a2f5654f1b2c72dee1ef0d124fc8408478a9/spring-boot-autoconfigure-1.3.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.3.6.RELEASE/6cb3cc449960a537768b7060c3eab9ebb6a07773/spring-boot-autoconfigure-1.3.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.3.6.RELEASE/8a878e0aafa9e9e87ca9250b8925eb424e2f39a8/spring-boot-starter-logging-1.3.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.3.6.RELEASE/194dc550f6d3b17067641085b6fd3d1c217202fd/spring-boot-starter-logging-1.3.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.16/ad03b39efb3749be4c8d2eae23d6dee72c889f3b/snakeyaml-1.16-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.16/d64fb662c9e42789149f5078a62a22edda786c6a/snakeyaml-1.16.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.21/c565ca9c1239b38fe4a70e4101086c4e880f6358/jcl-over-slf4j-1.7.21-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.21/331b564a3a42f002a0004b039c1c430da89062cd/jcl-over-slf4j-1.7.21.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/1.3.6.RELEASE/3b0bfd30050ad793dabb519627f73dd3a60b1399/spring-boot-gradle-plugin-1.3.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/1.3.6.RELEASE/1edc38660650dc234ef2b958fe06696243f9811e/spring-boot-gradle-plugin-1.3.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/1.3.6.RELEASE/e2322ae6ad14d0d717225332cdc3e830b36ae744/spring-boot-loader-tools-1.3.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/1.3.6.RELEASE/396cf1af5248274eac462d525251a581a8a928a9/spring-boot-loader-tools-1.3.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/0.5.7.RELEASE/b83b9376fedc6ccd7dde85d1570af4e56baf5ba2/dependency-management-plugin-0.5.7.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/0.5.7.RELEASE/f03a3b3584c0f2673ed08cd7be2205bfd0ea8cbf/dependency-management-plugin-0.5.7.RELEASE.jar" />
+>>>>>>> Stashed changes
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$" />
@@ -720,8 +865,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> Stashed changes
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1020,33 +1170,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.stackexchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.stackexchange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+<<<<<<< Updated upstream
       <pane id="Scratches" />
+=======
+      <pane id="PackagesPane" />
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1688,7 +1824,7 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\vssmirnov.DEV\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1698,7 +1834,14 @@
       <updated>1478014241047</updated>
       <workItem from="1478014244622" duration="9534000" />
       <workItem from="1478076062544" duration="26292000" />
+<<<<<<< Updated upstream
       <workItem from="1478237582079" duration="1191000" />
+=======
+      <workItem from="1478237582079" duration="5847000" />
+      <workItem from="1478246031190" duration="603000" />
+      <workItem from="1478247009243" duration="114000" />
+      <workItem from="1478247338294" duration="317000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="[+] Spring MVC&#10;[*] jQuery table&#10;">
       <created>1478020883118</created>
@@ -1805,7 +1948,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="37017000" />
+=======
+    <option name="totallyTimeSpent" value="42707000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1820,7 +1967,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2439282" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2439282" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1837,8 +1988,13 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< Updated upstream
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2407,7 +2563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2415,7 +2570,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#342#343#0" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
+            <element signature="e#423#424#0" expanded="false" />
+            <element signature="e#458#459#0" expanded="false" />
+            <element signature="e#485#486#0" expanded="false" />
+            <element signature="e#529#530#0" expanded="false" />
+            <element signature="e#561#562#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
+            <element signature="e#624#625#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#703#704#0" expanded="false" />
+            <element signature="e#736#737#0" expanded="false" />
+            <element signature="e#765#766#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#845#846#0" expanded="false" />
+            <element signature="e#879#880#0" expanded="false" />
+            <element signature="e#909#910#0" expanded="false" />
+            <element signature="e#955#956#0" expanded="false" />
+            <element signature="e#993#994#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2424,7 +2600,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding>
+<<<<<<< Updated upstream
             <element signature="imports" expanded="true" />
+=======
+            <element signature="imports" expanded="false" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
@@ -2434,7 +2614,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
+<<<<<<< Updated upstream
             <element signature="imports" expanded="true" />
+=======
+            <element signature="imports" expanded="false" />
+            <element signature="e#352#353#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
@@ -2443,7 +2629,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2455,6 +2643,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7165698">
@@ -2462,6 +2651,45 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="46" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile.win">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="80" selection-start-line="0" selection-start-column="80" selection-end-line="0" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5280899">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22306855">
+          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
