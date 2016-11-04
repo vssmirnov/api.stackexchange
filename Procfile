@@ -1,1 +1,1 @@
-web: java -Dgrails.env=prod -jar ./build/server/webapp-runner-api.stackexchange-1.0-SNAPSHOT.jar --expand-war --port $PORT ./build/libs/api.stackexchange-1.0-SNAPSHOT.war
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/api.stackexchange-1.0-SNAPSHOT.jar

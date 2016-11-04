@@ -30,8 +30,8 @@
   <form method="GET" action="/search">
     <table>
       <tr>
-        <td><b> intitle </b></td>
-        <td><input type = "text" name = "in title" /></td>
+        <td><b> in title </b></td>
+        <td><input type = "text" name = "intitle" /></td>
         <td><input type = "submit" name = "searchSubmit" value = "search"/></td>
       </tr>
     </table>
