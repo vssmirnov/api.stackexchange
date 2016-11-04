@@ -40,12 +40,12 @@
       <table id="tableResult" class="display">
         <thead>
         <tr>
+          <th><u>is answered</u></th>
           <th><u>title</u></th>
           <th><u>tags</u></th>
           <th><u>owner</u></th>
-          <th><u>is_answered</u></th>
-          <th><u>last_activity_date</u></th>
-          <th><u>creation_date</u></th>
+          <th><u>last activity date</u></th>
+          <th><u>creation date</u></th>
         </tr>
         </thead>
         <tbody>
@@ -54,11 +54,22 @@
           if (param != null){
             Object[] questions = param.getItems();
             for (int i = 0; i < questions.length; i+=1){
+                Question quest = (Question)questions[i];
         %>
         <tr>
+          <td align="center">
           <%
-            Question quest = (Question)questions[i];
+                if (quest.getAnswered()){
           %>
+              <img src="../../img/isAnswered.png" width = 20>
+          <%
+                }
+                else{
+          %>
+          <%
+                }
+          %>
+          </td>
           <td> <a href="<%=quest.getLink()%>"> <%=quest.getTitle()%> </a> </td>
           <td> <%=String.join(",", quest.getTags())%> </td>
           <%
@@ -75,7 +86,6 @@
           <%
             }
           %>
-          <td> <%=quest.getAnswered()%> </td>
           <td> <%=quest.getLastActivityDate()%> </td>
           <td> <%=quest.getCreationDate()%> </td>
         </tr>
