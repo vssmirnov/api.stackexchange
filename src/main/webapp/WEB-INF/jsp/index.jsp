@@ -1,7 +1,8 @@
 <%@ page import="java.util.Date" %>
 <%@ page import="java.util.LinkedHashMap" %>
 <%@ page import="webapp.model.Question" %>
-<%@ page import="webapp.model.Wrapper" %><%--
+<%@ page import="webapp.model.Wrapper" %>
+<%@ page import="webapp.model.ShallowUser" %><%--
   Created by IntelliJ IDEA.
   User: vssmirnov
   Date: 01.11.2016
@@ -56,23 +57,27 @@
         %>
         <tr>
           <%
-            LinkedHashMap<String, Object> quest = (LinkedHashMap<String, Object>)questions[i];
+            Question quest = (Question)questions[i];
           %>
-          <td> <a href="<%=quest.get("link")%>"> <%=quest.get("title")%> </a> </td>
-          <td> <%=quest.get("tags")%> </td>
+          <td> <a href="<%=quest.getLink()%>"> <%=quest.getTitle()%> </a> </td>
+          <td> <%=String.join(",", quest.getTags())%> </td>
           <%
-            LinkedHashMap<String, Object> owner = (LinkedHashMap<String, Object>) quest.get("owner");
+            ShallowUser owner = (ShallowUser) quest.getOwner();
+            if (owner == null){
+                owner = new ShallowUser();
           %>
-          <td> <a href="<%=owner.get("link")%>"> <%=owner.get("display_name")%> </a> </td>
-          <td> <%=quest.get("is_answered")%> </td>
+            <td> <%=owner.getDisplayName()%> </a> </td>
           <%
-            Date lastActivityDate = new Date((Integer) quest.get("last_activity_date"));
+            }
+            else {
           %>
-          <td> <%=lastActivityDate%> </td>
+            <td> <a href="<%=owner.getLink()%>"> <%=owner.getDisplayName()%> </a> </td>
           <%
-            Date creationDate = new Date((Integer) quest.get("creation_date"));
+            }
           %>
-          <td> <%=creationDate%> </td>
+          <td> <%=quest.getAnswered()%> </td>
+          <td> <%=quest.getLastActivityDate()%> </td>
+          <td> <%=quest.getCreationDate()%> </td>
         </tr>
         <%
             }

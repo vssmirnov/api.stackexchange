@@ -7,10 +7,10 @@ public enum PostType {
     /// <summary>
     /// question
     /// </summary>
-    Question,
+    question,
 
     /// <summary>
     /// answer
     /// </summary>
-    Answer
+    answer
 }

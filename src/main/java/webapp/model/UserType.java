@@ -1,5 +1,7 @@
 package webapp.model;
 
+import org.codehaus.jackson.annotate.JsonProperty;
+
 /**
  * Created by vssmirnov on 02.11.2016.
  */
@@ -7,20 +9,20 @@ public enum UserType {
     /// <summary>
     /// unregistered
     /// </summary>
-    Unregistered,
+    unregistered,
 
     /// <summary>
     /// registered
     /// </summary>
-    Registered,
+    registered,
 
     /// <summary>
     /// moderator
     /// </summary>
-    Moderator,
+    moderator,
 
     /// <summary>
     /// does_not_exist
     /// </summary>
-    DoesNotExist
+    does_not_exist
 }

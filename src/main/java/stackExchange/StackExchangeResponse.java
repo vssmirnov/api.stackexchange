@@ -7,7 +7,8 @@ import webapp.model.Wrapper;
  */
 public class StackExchangeResponse<T> {
     private boolean succes;
-    private Wrapper<T> data;
+    private Wrapper<T> wrapper;
+    private T[] data;
     private Exception error;
     private String apiUrl;
     private String rawData;
@@ -20,12 +21,12 @@ public class StackExchangeResponse<T> {
         this.succes = succes;
     }
 
-    public Wrapper<T> getData() {
-        return data;
+    public Wrapper<T> getWrapper() {
+        return wrapper;
     }
 
-    public void setData(Wrapper<T> data) {
-        this.data = data;
+    public void setWrapper(Wrapper<T> wrapper) {
+        this.wrapper = wrapper;
     }
 
     public Exception getError() {
@@ -50,5 +51,13 @@ public class StackExchangeResponse<T> {
 
     public void setRawData(String rawData) {
         this.rawData = rawData;
+    }
+
+    public T[] getData() {
+        return data;
+    }
+
+    public void setData(T[] data) {
+        this.data = data;
     }
 }

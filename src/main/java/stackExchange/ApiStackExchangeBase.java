@@ -1,21 +1,18 @@
 package stackExchange;
 
+import org.codehaus.jackson.map.DeserializationConfig;
+import org.codehaus.jackson.map.type.TypeFactory;
 import org.codehaus.jackson.type.JavaType;
-import org.springframework.expression.spel.support.ReflectionHelper;
-import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
-import org.springframework.web.context.request.WebRequest;
 
 import java.io.*;
-import java.lang.reflect.Field;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.rmi.activation.Activator;
-import java.time.LocalDateTime;
-import java.util.*;
-import java.util.zip.GZIPInputStream;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.type.TypeReference;
 import webapp.model.HttpMethod;
+import webapp.model.Question;
 import webapp.model.Wrapper;
 
 
@@ -28,28 +25,38 @@ public abstract class ApiStackExchangeBase<T> {
     private final boolean respectBackoffs;
     protected final ObjectMapper objectMapper;
     protected String version;
+    private IHTTPMethodRequest httpMethodRequest;
 
-    public ApiStackExchangeBase(String version){
+    public ApiStackExchangeBase(String version, IHTTPMethodRequest httpMethodRequest){
         this.version = version;
+        this.httpMethodRequest = httpMethodRequest;
         apiTimeoutMs = 5000;
         maxSimultaneousRequests = 10;
         respectBackoffs = true;
         objectMapper = new ObjectMapper();
     }
 
-    protected StackExchangeResponse<Wrapper<T>> GetResponse(ApiUrlBuilder urlBuilder, HttpMethod httpMethod, String backOfKey) throws IOException {
+    protected StackExchangeResponse<T> GetResponse(ApiUrlBuilder urlBuilder, HttpMethod httpMethod, String backOfKey) throws IOException {
         StackExchangeResponse response = new StackExchangeResponse<Wrapper<T>>();
         try
         {
-
             if (httpMethod == HttpMethod.POST){
                 response.setApiUrl(urlBuilder.getBaseUrl());
-                response.setRawData(fetchResponseWithPost(response.getApiUrl(), urlBuilder.QueryString()));
+                response.setRawData(httpMethodRequest.fetchResponseWithPost(response.getApiUrl(), urlBuilder.QueryString()));
             }
             else {
                 response.setApiUrl(urlBuilder.toString());
-                response.setRawData(fetchResponseWithGet(response.getApiUrl()));
-                response.setData(objectMapper.readValue(response.getRawData(), getType()));
+                response.setRawData(httpMethodRequest.fetchResponseWithGet(response.getApiUrl()));
+
+                String itemsJson = GetItemsJson(response.getRawData());
+                TypeFactory factory = TypeFactory.defaultInstance();
+                objectMapper.configure(DeserializationConfig.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+                ArrayList<Question> list = objectMapper.readValue(itemsJson, new TypeReference<Collection<Question>>(){} /*factory.constructCollectionType(ArrayList.class, Question.class)*/);
+                String wrapperJson = RemoveItemsJson(response.getRawData());
+                Wrapper wrapper = objectMapper.readValue(wrapperJson, getTypeWrapper());
+                wrapper.setItems(list.toArray());
+
+                response.setWrapper(wrapper);
             }
         }
         catch (Exception ex){
@@ -61,7 +68,32 @@ public abstract class ApiStackExchangeBase<T> {
         }
     }
 
-    protected abstract JavaType getType();
+    private String GetItemsJson(String json){
+        Integer startIndex = json.indexOf("\"items\":[") + 9;
+
+        if (startIndex == 0){
+            return "{}";
+        }
+
+        Integer endIndex = json.lastIndexOf("]");
+        String result = json.substring(startIndex, endIndex);
+        return "[" + result + "]";
+    }
+
+    private String RemoveItemsJson(String json){
+        Integer startIndex = json.indexOf("\"items\":[");
+
+        if (startIndex == 0){
+            return json;
+        }
+
+        Integer endIndex = json.lastIndexOf("]") + 1;
+        String result = json.substring(0, startIndex) + "\"items\":[]" + json.substring(endIndex);
+        return result;
+    }
+
+    protected abstract JavaType getTypeWrapper();
+    protected abstract JavaType getTypeGenericClass();
 
     protected void ValidateString(String value, String paramName)
     {
@@ -70,52 +102,5 @@ public abstract class ApiStackExchangeBase<T> {
 
         if (value == "")
             throw new IllegalArgumentException(paramName + " cannot be empty");
-    }
-
-    protected String fetchResponseWithGet(String apiUrl) throws IOException {
-        URL url = new URL(apiUrl);
-        HttpURLConnection request = (HttpURLConnection)url.openConnection();
-        request.setRequestMethod("GET");
-        request.setRequestProperty("Accept-Encoding", "gzip");
-
-        BufferedReader reader = null;
-
-        if ("gzip".equals(request.getContentEncoding())){
-            reader = new BufferedReader(new InputStreamReader(new GZIPInputStream(request.getInputStream())));
-        }
-        else{
-            InputStream inputStream = request.getInputStream();
-            reader = new BufferedReader(new InputStreamReader(inputStream));
-        }
-
-        StringBuilder response = new StringBuilder();
-        String line;
-        while ((line = reader.readLine()) != null){
-            response.append(line);
-        }
-        reader.close();
-        return response.toString();
-    }
-
-    protected String fetchResponseWithPost(String apiUrl, String urlParameters) throws IOException {
-        URL url = new URL(apiUrl);
-        HttpURLConnection request = (HttpURLConnection)url.openConnection();
-        request.setRequestMethod("POST");
-        request.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-        request.setRequestProperty("Content-Type", Integer.toString(urlParameters.getBytes().length));
-
-        DataOutputStream outputStream = new DataOutputStream(request.getOutputStream());
-        outputStream.writeBytes(urlParameters);
-        outputStream.close();
-
-        InputStream inputStream = request.getInputStream();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-        StringBuilder response = new StringBuilder();
-        String line;
-        while ((line = reader.readLine()) != null){
-            response.append(line);
-        }
-        reader.close();
-        return response.toString();
     }
 }

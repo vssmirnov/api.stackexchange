@@ -7,6 +7,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import stackExchange.HTTPMethodRequest;
 import stackExchange.SearchApiStackExchange;
 import stackExchange.StackExchangeResponse;
 import webapp.model.Question;
@@ -31,13 +32,13 @@ public class MainController {
     public String searchText(@RequestParam(value = "intitle") String intitle, ModelMap map) throws IOException {
         LOGGER.info(intitle);
 
-        SearchApiStackExchange searchApiStackExchange = new SearchApiStackExchange("2.2");
-        StackExchangeResponse<Wrapper<Question>> response = searchApiStackExchange.GetMatches(
+        SearchApiStackExchange searchApiStackExchange = new SearchApiStackExchange("2.2", new HTTPMethodRequest());
+        StackExchangeResponse<Question> response = searchApiStackExchange.GetMatches(
                 "stackoverflow.com", null, null, null,
                 null, null, null,
                 null ,null, null, null, null, intitle);
 
-        map.addAttribute("ResultMessage", response.getData());
+        map.addAttribute("ResultMessage", response.getWrapper());
         LOGGER.info(response.getApiUrl());
         return "index";
     }

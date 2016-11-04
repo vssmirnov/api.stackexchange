@@ -1,5 +1,7 @@
 package webapp.model;
 
+import org.codehaus.jackson.annotate.JsonProperty;
+
 /**
  * Created by vssmirnov on 02.11.2016.
  */
@@ -7,20 +9,20 @@ public enum SearchSort {
     /// <summary>
     /// last_activity_date
     /// </summary>
-    Activity,
+    activity,
 
     /// <summary>
     /// creation_date
     /// </summary>
-    Creation,
+    creation,
 
     /// <summary>
     /// score
     /// </summary>
-    Votes,
+    votes,
 
     /// <summary>
     /// matches the relevance tab on the site itself
     /// </summary>
-    Relevance
+    relevance
 }

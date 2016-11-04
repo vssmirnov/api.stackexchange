@@ -1,5 +1,7 @@
 package webapp.model;
 
+import org.codehaus.jackson.annotate.JsonProperty;
+
 /**
  * Created by vssmirnov on 02.11.2016.
  */
@@ -7,20 +9,20 @@ public enum SiteState {
     /// <summary>
     /// normal
     /// </summary>
-    Normal,
+    normal,
 
     /// <summary>
     /// closed_beta
     /// </summary>
-    ClosedBeta,
+    closed_beta,
 
     /// <summary>
     /// open_beta
     /// </summary>
-    OpenBeta,
+    open_beta,
 
     /// <summary>
     /// linked_meta
     /// </summary>
-    LinkedMeta
+    linked_meta
 }
