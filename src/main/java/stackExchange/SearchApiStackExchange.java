@@ -14,6 +14,10 @@ public class SearchApiStackExchange extends ApiStackExchangeBase<Question> imple
         super(version);
     }
 
+    public SearchApiStackExchange(){
+        super("2.2");
+    }
+
     @Override
     protected JavaType getType() {
         Wrapper<Question> wrapper = new Wrapper<Question>();
@@ -29,7 +33,7 @@ public class SearchApiStackExchange extends ApiStackExchangeBase<Question> imple
         urlBuilder.AddParameter("site", site);
         urlBuilder.AddParameter("filter", filter);
         urlBuilder.AddParameter("page", page);
-        urlBuilder.AddParameter("pagesize", 100);
+        urlBuilder.AddParameter("pagesize", 1);
         urlBuilder.AddParameter("fromdate", fromdate);
         urlBuilder.AddParameter("todate", todate);
         urlBuilder.AddParameter("sort", sort);

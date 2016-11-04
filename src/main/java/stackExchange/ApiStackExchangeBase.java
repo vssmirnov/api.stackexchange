@@ -72,7 +72,7 @@ public abstract class ApiStackExchangeBase<T> {
             throw new IllegalArgumentException(paramName + " cannot be empty");
     }
 
-    private String fetchResponseWithGet(String apiUrl) throws IOException {
+    protected String fetchResponseWithGet(String apiUrl) throws IOException {
         URL url = new URL(apiUrl);
         HttpURLConnection request = (HttpURLConnection)url.openConnection();
         request.setRequestMethod("GET");
@@ -97,7 +97,7 @@ public abstract class ApiStackExchangeBase<T> {
         return response.toString();
     }
 
-    private String fetchResponseWithPost(String apiUrl, String urlParameters) throws IOException {
+    protected String fetchResponseWithPost(String apiUrl, String urlParameters) throws IOException {
         URL url = new URL(apiUrl);
         HttpURLConnection request = (HttpURLConnection)url.openConnection();
         request.setRequestMethod("POST");

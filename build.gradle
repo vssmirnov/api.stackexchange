@@ -31,7 +31,10 @@ dependencies {
     )
     testCompile(
             'junit:junit:4.12',
-            'org.springframework:spring-test:4.1.5.RELEASE'
+            'org.springframework:spring-test:4.1.5.RELEASE',
+            'org.mockito:mockito-all:1.10.x',
+            'org.powermock:powermock-module-junit4:1.6.1',
+            'org.powermock:powermock-api-mockito:1.6.1',
     )
 }
 
