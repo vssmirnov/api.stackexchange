@@ -4,12 +4,18 @@ import org.codehaus.jackson.type.JavaType;
 import webapp.model.*;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
  * Created by vssmirnov on 02.11.2016.
+ * <p>Class implements search method site api.stackexchange.com</p>
  */
 public class SearchApiStackExchange extends ApiStackExchangeBase<Question> implements ISearchApiStackExchange {
+    /**
+     * @param version Version site, example site http://api.stackexchange.com/2.2/search, where version 2.2
+     * @param methodRequest
+     */
     public SearchApiStackExchange(String version, IHTTPMethodRequest methodRequest) {
         super(version, methodRequest);
     }
@@ -22,7 +28,8 @@ public class SearchApiStackExchange extends ApiStackExchangeBase<Question> imple
 
     @Override
     protected JavaType getTypeGenericClass() {
-        Question[] questions = new Question[]{};
+        /*new TypeReference<Collection<Question>>(){}*/
+        ArrayList<Question> questions = new ArrayList<>();
         return objectMapper.getTypeFactory().constructArrayType(questions.getClass());
     }
 
@@ -46,6 +53,6 @@ public class SearchApiStackExchange extends ApiStackExchangeBase<Question> imple
         urlBuilder.AddParameter("nottagged", nottagged);
         urlBuilder.AddParameter("intitle", intitle);
 
-        return GetResponse(urlBuilder, HttpMethod.GET, "/search");
+        return GetResponse(urlBuilder, HttpMethod.GET);
     }
 }

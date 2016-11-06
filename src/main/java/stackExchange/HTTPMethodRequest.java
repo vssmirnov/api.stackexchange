@@ -7,8 +7,15 @@ import java.util.zip.GZIPInputStream;
 
 /**
  * Created by Drol on 04.11.2016.
+ * <p>Implemetation IHTTPMethodRequest</p>
  */
 public class HTTPMethodRequest implements IHTTPMethodRequest {
+    /**
+     * <p>HTTP method GET</p>
+     * @param apiUrl Url adress
+     * @return JSON
+     * @throws IOException Any exception
+     */
     @Override
     public String fetchResponseWithGet(String apiUrl) throws IOException {
         URL url = new URL(apiUrl);
@@ -35,6 +42,14 @@ public class HTTPMethodRequest implements IHTTPMethodRequest {
         return response.toString();
     }
 
+    /**
+     * <p>HTTP method POST</p>
+     * <p>Not tested</p>
+     * @param apiUrl Url adress
+     * @param urlParameters Paramters
+     * @return JSON
+     * @throws IOException Any exception
+     */
     @Override
     public String fetchResponseWithPost(String apiUrl, String urlParameters) throws IOException {
         URL url = new URL(apiUrl);
