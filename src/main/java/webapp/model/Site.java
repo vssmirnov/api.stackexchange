@@ -6,6 +6,7 @@ import java.util.Date;
 
 /**
  * Created by vssmirnov on 02.11.2016.
+ * <p>Model Site from site of http://api.stackexchange.com</p>
  */
 public class Site {
     private String[] aliases;

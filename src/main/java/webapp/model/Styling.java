@@ -4,6 +4,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
 
 /**
  * Created by vssmirnov on 02.11.2016.
+ * <p>Model Styling from site of http://api.stackexchange.com</p>
  */
 public class Styling {
     @JsonProperty("link_color")

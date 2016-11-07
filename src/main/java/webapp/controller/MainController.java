@@ -17,17 +17,29 @@ import java.io.IOException;
 
 /**
  * Created by vssmirnov on 01.11.2016.
+ * <p>Main controller for display "input text" and "table" </p>
  */
 @Controller
 public class MainController {
     private static final Logger LOGGER = LoggerFactory.getLogger(MainController.class);
 
+    /**
+     * Display view
+     * @return index.jsp without table data
+     */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String renderMainView() {
         LOGGER.info("Rendering main view.");
         return "index";
     }
 
+    /**
+     * Display view
+     * @param intitle Input parameter obtained from the user
+     * @param map Model map
+     * @return index.jsp with table data
+     * @throws IOException Any exception
+     */
     @RequestMapping(value = "/search", method = RequestMethod.GET, params = {"intitle"})
     public String searchText(@RequestParam(value = "intitle") String intitle, ModelMap map) throws IOException {
         LOGGER.info(intitle);

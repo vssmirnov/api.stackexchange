@@ -14,21 +14,21 @@ import java.util.Date;
 public interface ISearchApiStackExchange {
     /**
      * The method search for getting data from the site api.stackexchange.com
-     * @param site
-     * @param filter
-     * @param page
-     * @param pagesize
-     * @param fromdate
-     * @param todate
-     * @param sort
-     * @param mindate
-     * @param maxdate
-     * @param order
-     * @param tagged
-     * @param nottagged
-     * @param intitle
+     * @param site site
+     * @param filter filter
+     * @param page page
+     * @param pagesize pagesize
+     * @param fromdate fromdate
+     * @param todate todate
+     * @param sort sort
+     * @param mindate mindate
+     * @param maxdate maxdate
+     * @param order order
+     * @param tagged tagged
+     * @param nottagged nottagged
+     * @param intitle intitle
      * @return Wrapper of response from the site
-     * @throws IOException
+     * @throws IOException Any exception
      */
     StackExchangeResponse<Question> GetMatches(
             String site, String filter, Integer page, Integer pagesize, Date fromdate,

@@ -123,10 +123,10 @@ public abstract class ApiStackExchangeBase<T> {
     protected abstract JavaType getTypeWrapper();
 
     /**
-     * <p>Get type class ArrayList<T>, where t for example Question</p>
+     * <p>Get type class TypeReference<Collection<T>>, where t for example Question</p>
      * @return Type for serialization
      */
-    protected abstract JavaType getTypeGenericClass();
+    protected abstract TypeReference getTypeGenericClass();
 
     /**
      * Validate required parameter of request

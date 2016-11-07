@@ -1,7 +1,8 @@
 <%@ page import="java.util.Date" %>
 <%@ page import="java.util.LinkedHashMap" %>
 <%@ page import="webapp.model.Question" %>
-<%@ page import="webapp.model.Wrapper" %><%--
+<%@ page import="webapp.model.Wrapper" %>
+<%@ page import="webapp.model.ShallowUser" %><%--
   Created by IntelliJ IDEA.
   User: vssmirnov
   Date: 01.11.2016
@@ -39,12 +40,12 @@
       <table id="tableResult" class="display">
         <thead>
         <tr>
+          <th><u>is answered</u></th>
           <th><u>title</u></th>
           <th><u>tags</u></th>
           <th><u>owner</u></th>
-          <th><u>is_answered</u></th>
-          <th><u>last_activity_date</u></th>
-          <th><u>creation_date</u></th>
+          <th><u>last activity date</u></th>
+          <th><u>creation date</u></th>
         </tr>
         </thead>
         <tbody>
@@ -53,26 +54,40 @@
           if (param != null){
             Object[] questions = param.getItems();
             for (int i = 0; i < questions.length; i+=1){
+                Question quest = (Question)questions[i];
         %>
         <tr>
+          <td align="center">
           <%
-            LinkedHashMap<String, Object> quest = (LinkedHashMap<String, Object>)questions[i];
+                if (quest.getAnswered()){
           %>
-          <td> <a href="<%=quest.get("link")%>"> <%=quest.get("title")%> </a> </td>
-          <td> <%=quest.get("tags")%> </td>
+              <img src="../../img/isAnswered.png" width = 20>
           <%
-            LinkedHashMap<String, Object> owner = (LinkedHashMap<String, Object>) quest.get("owner");
+                }
+                else{
           %>
-          <td> <a href="<%=owner.get("link")%>"> <%=owner.get("display_name")%> </a> </td>
-          <td> <%=quest.get("is_answered")%> </td>
           <%
-            Date lastActivityDate = new Date((Integer) quest.get("last_activity_date"));
+                }
           %>
-          <td> <%=lastActivityDate%> </td>
+          </td>
+          <td> <a href="<%=quest.getLink()%>"> <%=quest.getTitle()%> </a> </td>
+          <td> <%=String.join(",", quest.getTags())%> </td>
           <%
-            Date creationDate = new Date((Integer) quest.get("creation_date"));
+            ShallowUser owner = (ShallowUser) quest.getOwner();
+            if (owner == null){
+                owner = new ShallowUser();
           %>
-          <td> <%=creationDate%> </td>
+            <td> <%=owner.getDisplayName()%> </a> </td>
+          <%
+            }
+            else {
+          %>
+            <td> <a href="<%=owner.getLink()%>"> <%=owner.getDisplayName()%> </a> </td>
+          <%
+            }
+          %>
+          <td> <%=quest.getLastActivityDate()%> </td>
+          <td> <%=quest.getCreationDate()%> </td>
         </tr>
         <%
             }

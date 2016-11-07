@@ -4,6 +4,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
 
 /**
  * Created by vssmirnov on 02.11.2016.
+ * <p>Model ShallowUser from site of http://api.stackexchange.com</p>
  */
 public class ShallowUser {
     @JsonProperty("accept_rate")
