@@ -21,14 +21,10 @@ public class HTTPMethodRequest implements IHTTPMethodRequest {
     public String fetchResponseWithGet(String apiUrl) throws IOException {
         StringBuilder response;
         HttpURLConnection request;
-        try {
-            URL url = new URL(apiUrl);
-            request = (HttpURLConnection) url.openConnection();
-            request.setRequestMethod("GET");
-            request.setRequestProperty("Accept-Encoding", "gzip");
-        }catch (Exception ex) {
-            throw ex;
-        }
+        URL url = new URL(apiUrl);
+        request = (HttpURLConnection) url.openConnection();
+        request.setRequestMethod("GET");
+        request.setRequestProperty("Accept-Encoding", "gzip");
 
         try(InputStreamReader inputStreamReader = new InputStreamReader(new GZIPInputStream(request.getInputStream())))
         {
