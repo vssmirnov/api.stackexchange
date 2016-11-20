@@ -20,36 +20,27 @@ public class HTTPMethodRequest implements IHTTPMethodRequest {
     @Override
     public String fetchResponseWithGet(String apiUrl) throws IOException {
         StringBuilder response;
-        BufferedReader reader = null;
+        HttpURLConnection request;
         try {
             URL url = new URL(apiUrl);
-            HttpURLConnection request = (HttpURLConnection) url.openConnection();
+            request = (HttpURLConnection) url.openConnection();
             request.setRequestMethod("GET");
             request.setRequestProperty("Accept-Encoding", "gzip");
-
-            if ("gzip".equals(request.getContentEncoding())) {
-                reader = new BufferedReader(new InputStreamReader(new GZIPInputStream(request.getInputStream())));
-            } else {
-                reader = new BufferedReader(new InputStreamReader(request.getInputStream()));
-            }
-
-            response = new StringBuilder();String line;
-            while ((line = reader.readLine()) != null) {
-                response.append(line);
-            }
-
-            return response.toString();
-        }catch (Exception ex){
+        }catch (Exception ex) {
             throw ex;
         }
-        finally {
-            if (reader != null)
-                try{
-                    reader.close();
+
+        try(InputStreamReader inputStreamReader = new InputStreamReader(new GZIPInputStream(request.getInputStream())))
+        {
+            try(BufferedReader reader = new BufferedReader(inputStreamReader)){
+                response = new StringBuilder();
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    response.append(line);
                 }
-                catch (IOException ex){
-                    throw ex;
-                }
+
+                return response.toString();
+            }
         }
     }
 

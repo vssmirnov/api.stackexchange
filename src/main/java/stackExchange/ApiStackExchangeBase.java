@@ -138,7 +138,7 @@ public abstract class ApiStackExchangeBase<T> {
         if (value == null)
             throw new IllegalArgumentException(paramName);
 
-        if (value == "")
+        if (value.isEmpty())
             throw new IllegalArgumentException(paramName + " cannot be empty");
     }
 }
