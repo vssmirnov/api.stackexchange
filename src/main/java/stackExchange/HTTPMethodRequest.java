@@ -10,6 +10,7 @@ import java.util.zip.GZIPInputStream;
  * <p>Implemetation IHTTPMethodRequest</p>
  */
 public class HTTPMethodRequest implements IHTTPMethodRequest {
+
     /**
      * <p>HTTP method GET</p>
      * @param apiUrl Url adress
@@ -18,28 +19,38 @@ public class HTTPMethodRequest implements IHTTPMethodRequest {
      */
     @Override
     public String fetchResponseWithGet(String apiUrl) throws IOException {
-        URL url = new URL(apiUrl);
-        HttpURLConnection request = (HttpURLConnection)url.openConnection();
-        request.setRequestMethod("GET");
-        request.setRequestProperty("Accept-Encoding", "gzip");
-
+        StringBuilder response;
         BufferedReader reader = null;
+        try {
+            URL url = new URL(apiUrl);
+            HttpURLConnection request = (HttpURLConnection) url.openConnection();
+            request.setRequestMethod("GET");
+            request.setRequestProperty("Accept-Encoding", "gzip");
 
-        if ("gzip".equals(request.getContentEncoding())){
-            reader = new BufferedReader(new InputStreamReader(new GZIPInputStream(request.getInputStream())));
-        }
-        else{
-            InputStream inputStream = request.getInputStream();
-            reader = new BufferedReader(new InputStreamReader(inputStream));
-        }
+            if ("gzip".equals(request.getContentEncoding())) {
+                reader = new BufferedReader(new InputStreamReader(new GZIPInputStream(request.getInputStream())));
+            } else {
+                reader = new BufferedReader(new InputStreamReader(request.getInputStream()));
+            }
 
-        StringBuilder response = new StringBuilder();
-        String line;
-        while ((line = reader.readLine()) != null){
-            response.append(line);
+            response = new StringBuilder();String line;
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
+            }
+
+            return response.toString();
+        }catch (Exception ex){
+            throw ex;
         }
-        reader.close();
-        return response.toString();
+        finally {
+            if (reader != null)
+                try{
+                    reader.close();
+                }
+                catch (IOException ex){
+                    throw ex;
+                }
+        }
     }
 
     /**
@@ -52,24 +63,52 @@ public class HTTPMethodRequest implements IHTTPMethodRequest {
      */
     @Override
     public String fetchResponseWithPost(String apiUrl, String urlParameters) throws IOException {
-        URL url = new URL(apiUrl);
-        HttpURLConnection request = (HttpURLConnection)url.openConnection();
-        request.setRequestMethod("POST");
-        request.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-        request.setRequestProperty("Content-Type", Integer.toString(urlParameters.getBytes().length));
+        StringBuilder response;
+        BufferedReader reader = null;
+        DataOutputStream outputStream = null;
+        HttpURLConnection request = null;
 
-        DataOutputStream outputStream = new DataOutputStream(request.getOutputStream());
-        outputStream.writeBytes(urlParameters);
-        outputStream.close();
+        try {
+            URL url = new URL(apiUrl);
+            request = (HttpURLConnection) url.openConnection();
+            request.setRequestMethod("POST");
+            request.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+            request.setRequestProperty("Content-Type", Integer.toString(urlParameters.getBytes().length));
 
-        InputStream inputStream = request.getInputStream();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-        StringBuilder response = new StringBuilder();
-        String line;
-        while ((line = reader.readLine()) != null){
-            response.append(line);
+            outputStream = new DataOutputStream(request.getOutputStream());
+            outputStream.writeBytes(urlParameters);
         }
-        reader.close();
-        return response.toString();
+        catch (Exception ex) {throw ex;
+        }
+        finally {
+            if (outputStream != null)
+                try {
+                    outputStream.close();
+                }
+                catch (IOException ex) {
+                    throw ex;
+                }
+        }
+
+        try{
+            reader = new BufferedReader(new InputStreamReader(request.getInputStream()));
+            response = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null){response.append(line);
+            }
+            reader.close();
+            return response.toString();
+        }catch (Exception ex){
+            throw ex;
+        }
+        finally {
+            if (reader != null)
+                try{
+                    reader.close();
+                }
+                catch (IOException ex){
+                    throw ex;
+                }
+        }
     }
 }
